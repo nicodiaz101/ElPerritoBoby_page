@@ -1,0 +1,49 @@
+body {
+    background: url(img/DSC_8097.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+h1 {
+    font-family: Tondo;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffff;
+    text-align: center;
+}
+h2 {
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 21px;
+    color: #ffff;
+    text-align: center;
+}
+h3 {
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 18px;
+    color: #ffff;
+    text-align: center;
+}
+h4 {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+}
+.others {
+    font-family: Montserrat;
+    font-weight: SemiBold;
+    font-size: 15px;
+}
+p {
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 16px;
+    color: #ffff;
+    text-align: center;
+}
+.copyright {
+    font-family: Roboto;
+    font-weight: Regular;
+    font-size: 7px;
+    text-align: center;
+}
