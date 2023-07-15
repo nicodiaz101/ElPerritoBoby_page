@@ -1,6 +1,8 @@
 body {
     background: url(img/DSC_8097.jpg) no-repeat center center fixed;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
 }
 h1 {
     font-family: Tondo;
@@ -46,4 +48,49 @@ p {
     font-weight: Regular;
     font-size: 7px;
     text-align: center;
+}
+.buttons {
+    text-align: center;
+    justify-content:space-evenly;
+}
+.buttons i {
+    text-decoration: none;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ffff;
+    border-color: black;
+    border-radius: 20%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.buttons i:hover{
+    transform: scale(1.2,1.2);
+    color: #ffff;
+    background-color: black;
+}
+.logoimg {
+    border-radius: 50%;
+    width: 100pt;
+    height: 100pt;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+.logo {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.large_button {
+    background-color: #E8DAC8;
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
 }
