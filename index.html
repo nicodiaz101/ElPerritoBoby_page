@@ -33,13 +33,17 @@
 <body>
     <header>
         <a href="index.html" class="logo">
-            <img src="img/10F1543DB5BA4B4FA2C80DE96415C55C.jpg" alt="Logo de la marca. Un perro sentado blanco,marron y naranja" class="logoimg">
+            <img class="logoimg" src="img/10F1543DB5BA4B4FA2C80DE96415C55C.jpg" alt="Logo de la marca. Un perro sentado blanco,marron y naranja" class="logoimg">
             <h1>Jardin de Infantes "El Perrito Boby"</h1>
         </a>
-        <nav>
-            <a href="nosotros.html" class="nav-link">Nosotros</a>
-            <a href="propuesta.html" class="nav-link">Propuesta</a>
-            <a href="https://plataforma.acadeu.com/i/perrito-boby" class="nav-link">Acceso Acadeu</a>
+        <button id="abrir" class="open-button"><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="close-button"><i class="fa-solid fa-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="propuesta.html">Propuesta</a></li>
+                <li><a href="https://plataforma.acadeu.com/i/perrito-boby">Acceso Acadeu</a></li>
+            </ul>
         </nav>
     </header> 
     <section class="inscripcion">
@@ -65,5 +69,6 @@
             <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="fa-solid fa-envelope"></a>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
