@@ -1,6 +1,6 @@
 header {
     display: flex;
-    height: 3rem;
+    height: 2rem;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
@@ -11,7 +11,7 @@ header {
     font-size: 10px;
 }
 .logo img {
-    height: 5rem;
+    height: 4rem;
     margin-right: 1rem;
 }
 .logo h1 {
@@ -27,6 +27,10 @@ header {
 .nav-list li a {
     text-decoration: none;
     color: #333;
+    font-size: 20px;
+}
+.nav-list li {
+    margin-bottom: 20px; /* Add margin-bottom to increase separation between li elements */
 }
 .nav {
     opacity: 0;
@@ -39,9 +43,10 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 2rem;
+    padding: 3rem;
     background-color: #ffff;
     box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+    transition: all .5s;
 }
 .nav.visible {
     opacity: 1;
@@ -49,7 +54,41 @@ header {
 }
 .open-button, .close-button {
      border: none;
-     font-size: 1.6rem;
+     font-size: 25px;
      background-color: transparent;
+     cursor: pointer;
 }
+.close-button {
+    margin-bottom: 1.5rem;
+}
+@media (min-width:700px) {
+    .nav-list {
+        flex-direction: row;
+        margin-right: -3rem;
+    }
+    .nav {
+        position: relative;
+        gap: 0;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        transition: none;
+    }
+    .open-button, .close-button {
+        display: none;
+    }
+    .nav-list li a {
+        padding: 5px;
+    }
+    .nav-list li {
+        margin-bottom: 0;
+    }
 
+}
+@media (min-width: 950px) {
+    .logo h1 {
+        display: block;
+    }
+}
