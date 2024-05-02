@@ -9,6 +9,7 @@ header {
     display: flex;
     align-items: center;
     font-size: 10px;
+    text-decoration: none;
 }
 .logo img {
     height: 4rem;
@@ -28,6 +29,8 @@ header {
     text-decoration: none;
     color: #333;
     font-size: 20px;
+    font-family: europa, sans-serif;
+    text-decoration:underline;
 }
 .nav-list li {
     margin-bottom: 20px; /* Add margin-bottom to increase separation between li elements */
@@ -87,8 +90,12 @@ header {
     }
 
 }
-@media (min-width: 950px) {
+@media (min-width: 985px) {
     .logo h1 {
         display: block;
+        font-family: hind, sans-serif;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        color: #333;
     }
 }
