@@ -66,6 +66,9 @@ header {
 .close-button {
     margin-bottom: 1.5rem;
 }
+.hide {
+    display: none;
+}
 /* Body */
 body {
     margin: 0;
@@ -120,13 +123,76 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding-top: 2.5rem;
 }
 .lema h3 {
     font-family: cardo, serif; 
     font-style: italic;
     font-weight: 400;
     font-size: 21px;
+    text-align: center;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 9rem;
+    background-color: #707070;
+    text-decoration: none;
+}
+footer h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: merriweather, serif;
+    font-weight: 700;
+}
+.direccion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+.direccion p {
+    color: #fff;
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: -5px;
+}
+.redes {
+    padding-right: 30px;
+}
+footer a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    background-color: #ffff;
+    border-color: black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+    transform: scale(1.2,1.2);
+    color: #ffff;
+    background-color: black
+}
+.redes a {
+    line-height: 1.4;
+}
+.consultas a {
+    line-height: 1.4;
+}
+.consultas {
+    padding-right: 10px;
 }
 @media (min-width:700px) {
     /* Header */
@@ -170,6 +236,15 @@ body {
     .lema h3 {
         font-size: 26px;
     }
+    /* Footer */
+    br { display: none; }
+    .direccion {
+        padding-right: 60px;
+    }
+    .redes{
+        padding-right: 60px;
+    
+    }
 
 }
 @media (min-width: 985px) {
@@ -180,5 +255,12 @@ body {
         font-size: 1.5rem;
         padding-left: 1rem;
         color: #333;
+    }
+    .direccion {
+        padding-right: 80px;
+    }
+    .redes{
+        padding-right: 150px;
+    
     }
 }
