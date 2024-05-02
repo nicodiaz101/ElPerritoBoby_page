@@ -1,3 +1,4 @@
+/* Header */
 header {
     display: flex;
     height: 2rem;
@@ -52,6 +53,7 @@ header {
     transition: all .5s;
 }
 .nav.visible {
+
     opacity: 1;
     visibility: visible;
 }
@@ -64,7 +66,70 @@ header {
 .close-button {
     margin-bottom: 1.5rem;
 }
+/* Body */
+body {
+    margin: 0;
+}
+/* Inscripción destacado */
+.inscripcion {
+    background-image: url(img/20240310_085214.jpg);
+    background-position: center;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inscripcion h4 {
+    font-family: montserrat, sans-serif; 
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 20px;
+}
+.large_button {
+    background-color: #E8DAC8;
+    color: #000;
+    border-radius: 10px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    font-family: Montserrat;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 40px;
+    width: 250px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 2.6;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+}
+.large_button:hover{
+    transform: scale(1.1,1.1);
+    color: #ffff;
+    background-color: #000;
+}
+/* Lema */
+.lema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.lema h3 {
+    font-family: cardo, serif; 
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+}
 @media (min-width:700px) {
+    /* Header */
     .nav-list {
         flex-direction: row;
         margin-right: -3rem;
@@ -88,9 +153,27 @@ header {
     .nav-list li {
         margin-bottom: 0;
     }
+    /* Inscripción destacado */
+    .inscripcion {
+        background-position: center 40%;
+    }
+    .inscripcion h4 {
+        font-size: 30px;
+    }
+    .large_button{
+        font-size: 18px;
+        height: 50px;
+        width: 400px;
+        line-height: 2.8;
+    }
+    /* Lema */
+    .lema h3 {
+        font-size: 26px;
+    }
 
 }
 @media (min-width: 985px) {
+    /* Header */
     .logo h1 {
         display: block;
         font-family: hind, sans-serif;
