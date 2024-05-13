@@ -90,6 +90,7 @@ body {
     padding-bottom: 2rem;
     color: #fff;
     font-size: 20px;
+    text-shadow: #000 2px 2px 5px;
 }
 .large_button {
     background-color: #E8DAC8;
