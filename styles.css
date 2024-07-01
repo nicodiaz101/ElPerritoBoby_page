@@ -104,22 +104,22 @@ body {
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
-    height: 80px; /* originalmente 40px */
+    height: 40px; /* originalmente 40px */
     width: 250px;
     text-decoration: none;
     font-weight: 400;
-    line-height: 2.4; /*Originalmente 2.5 */
+    line-height: 2.5; /*Originalmente 2.5 */
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     transition: all 0.3s ease-in-out;
     font-size: 15px;
-    pointer-events: none; /* Deshabilita el boton para evitar recursividad */
-    cursor: default; /* Para PC, no muestra cambio en el cursor como si lo haria si estuviese activado el boton */
+    /*pointer-events: none; Deshabilita el boton para evitar recursividad */
+    /* cursor: default;  Para PC, no muestra cambio en el cursor como si lo haria si estuviese activado el boton */
 }
-/*.large_button:hover{
+.large_button:hover{
     transform: scale(1.1,1.1);
     color: #ffff;
     background-color: #000;
-}*/
+}
 /* Lema */
 .lema {
     display: flex;
