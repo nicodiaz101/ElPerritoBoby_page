@@ -1,0 +1,265 @@
+/* Header */
+header {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    text-decoration: none;
+}
+.logo img {
+    height: 4rem;
+    margin-right: 1rem;
+}
+.logo h1 {
+    display: none;
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: end;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-family: europa, sans-serif;
+    text-decoration:underline;
+}
+.nav-list li {
+    margin-bottom: 20px; /* Add margin-bottom to increase separation between li elements */
+}
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 3rem;
+    background-color: #ffff;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+    transition: all .5s;
+}
+.nav.visible {
+
+    opacity: 1;
+    visibility: visible;
+}
+.open-button, .close-button {
+     border: none;
+     font-size: 25px;
+     background-color: transparent;
+     cursor: pointer;
+}
+.close-button {
+    margin-bottom: 1.5rem;
+}
+.hide {
+    display: none;
+}
+/* Body */
+body {
+    margin: 0;
+}
+/* Inscripción destacado */
+.inscripcion {
+    background-image: url(img/20240310_085214.jpg);
+    background-position: center;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inscripcion h4 {
+    font-family: montserrat, sans-serif; 
+    font-weight: 600;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: #000 2px 2px 5px;
+}
+.large_button {
+    background-color: #E8DAC8;
+    color: #000;
+    border-radius: 10px;
+    border-color: #000;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    font-family: Montserrat;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 40px;
+    width: 250px;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 2.5; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+}
+.large_button:hover{
+    transform: scale(1.1,1.1);
+    color: #ffff;
+    background-color: #000;
+}
+/* Lema */
+.lema {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50vh - 40px - 200px);
+}
+.lema h3 {
+    font-family: cardo, serif; 
+    font-style: italic;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #707070;
+    text-decoration: none;
+}
+footer h3 {
+    color: #fff;
+    font-size: 15px;
+    font-family: merriweather, serif;
+    font-weight: 700;
+}
+.direccion {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+.direccion p {
+    color: #fff;
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: -5px;
+}
+.redes {
+    padding-right: 30px;
+}
+footer a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    background-color: #ffff;
+    border-color: black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+    transform: scale(1.2,1.2);
+    color: #ffff;
+    background-color: black
+}
+.redes a {
+    line-height: 1.4;
+}
+.consultas a {
+    line-height: 1.4;
+}
+.consultas {
+    padding-right: 10px;
+}
+@media (min-width:700px) {
+    /* Header */
+    .nav-list {
+        flex-direction: row;
+        margin-right: -3rem;
+    }
+    .nav {
+        position: relative;
+        gap: 0;
+        background-color: transparent;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+        transition: none;
+    }
+    .open-button, .close-button {
+        display: none;
+    }
+    .nav-list li a {
+        padding: 5px;
+    }
+    .nav-list li {
+        margin-bottom: 0;
+    }
+    /* Inscripción destacado */
+    .inscripcion {
+        background-position: center 40%;
+    }
+    .inscripcion h4 {
+        font-size: 30px;
+    }
+    .large_button{
+        font-size: 18px;
+        height: 50px;
+        width: 400px;
+        line-height: 2.8;
+    }
+    /* Lema */
+    .lema h3 {
+        font-size: 26px;
+    }
+    /* Footer */
+    br { display: none; }
+    .direccion {
+        padding-right: 60px;
+    }
+    .redes{
+        padding-right: 60px;
+    
+    }
+
+}
+@media (min-width: 985px) {
+    /* Header */
+    .logo h1 {
+        display: block;
+        font-family: hind, sans-serif;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        color: #333;
+    }
+    .direccion {
+        padding-right: 80px;
+    }
+    .redes{
+        padding-right: 150px;
+    
+    }
+}
