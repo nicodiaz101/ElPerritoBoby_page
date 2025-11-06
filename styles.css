@@ -87,7 +87,8 @@ body {
 .inscripcion h4 {
     font-family: montserrat, sans-serif; 
     font-weight: 600;
-    padding-bottom: 2rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
     color: #fff;
     font-size: 20px;
     text-shadow: #000 2px 2px 5px;
@@ -271,7 +272,7 @@ footer a:hover {
         font-size: 26px;
     }
     /* Footer */
-    br { display: none; }
+    .direccion br { display: none; }
     .direccion {
         padding-right: 60px;
     }
