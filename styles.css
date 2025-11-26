@@ -229,6 +229,45 @@ footer a:hover {
 .consultas {
     padding-right: 10px;
 }
+/* Pagina Nosotros */
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+.title{
+    font-family: montserrat, sans-serif; 
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+}
+.historia-texto {
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+.principios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.principios-texto {
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+.principios-list{
+    margin-top: 1rem;
+    line-height: 1.6;
+}
 @media (min-width:700px) {
     /* Header */
     .nav-list {
