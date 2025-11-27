@@ -673,6 +673,23 @@ footer a:hover {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
+.ubicacion-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.ubicacion-texto p {
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0.5rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 1.6;
+}
 
 /* Hover: pasa a verde tipo WhatsApp y texto blanco */
 .mail-button:hover {
