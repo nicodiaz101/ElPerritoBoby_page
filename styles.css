@@ -237,6 +237,8 @@ footer a:hover {
     align-items: center;
     padding: 2rem 1rem 1rem 1rem;
 }
+
+/* Titulo en general */
 .title{
     font-family: montserrat, sans-serif; 
     font-weight: 600;
@@ -265,9 +267,386 @@ footer a:hover {
     line-height: 1.6;
 }
 .principios-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 1rem;
     margin-top: 1rem;
     line-height: 1.6;
 }
+
+/* Reset native list and use a counter for custom centered numbers */
+.principios-list ul{
+    list-style: none;
+    counter-reset: principio;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+}
+
+/* Each item is centered, number sits above the text in a circle */
+.principios-list li{
+    counter-increment: principio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+    background: transparent;
+}
+
+/* Number bubble */
+.principios-list li::before{
+    content: counter(principio);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #E8DAC8;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.12);
+}
+
+/* Hover/focus effect */
+.principios-list li:hover,
+.principios-list li:focus-within{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    background: rgba(232,218,200,0.08);
+}
+
+/* Ensure paragraph/text inside items is centered and well spaced */
+.principios-list li > * {
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Optional: on wider screens keep visual balance but allow horizontal layout */
+@media (min-width: 1000px) {
+    .principios-list ul { max-width: 1000px; }
+    .principios-list li {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .principios-list li::before{
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+    }
+}
+/* Propuesta */
+    .propuestas-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    /* Reset native list (sin contador numérico) */
+    .propuestas-list ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Cada item centrado; ahora usa un <i> de Font Awesome dentro de cada li */
+    .propuestas-list li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+        background: transparent;
+        font-family: montserrat, sans-serif;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+    /* Si había pseudo-elementos anteriores, desactivar para evitar emojis */
+    .propuestas-list li::before{
+        content: none;
+    }
+
+    /* Estilo para el <i> de Font Awesome (coloca un <i class="fa ..."> como primer hijo del li) */
+    .propuestas-list li i,
+    .propuestas-list li .fa,
+    .propuestas-list li .fas,
+    .propuestas-list li .far,
+    .propuestas-list li .fab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #E8DAC8;
+        color: #000;
+        font-weight: 700; /* para FA 6: use 900 para solid si corresponde */
+        margin-bottom: 0.5rem;
+        box-shadow: 2px 2px 6px rgba(0,0,0,.12);
+        font-size: 18px;
+        line-height: 1;
+        padding: 0;
+        box-sizing: border-box;
+        /* Asegura que cualquier pseudo-elemento o SVG quede centrado */
+        text-align: center;
+    }
+
+    /* Alinea correctamente iconos generados por pseudo-elementos de FontAwesome */
+    .propuestas-list li i::before,
+    .propuestas-list li .fa::before,
+    .propuestas-list li .fas::before,
+    .propuestas-list li .far::before,
+    .propuestas-list li .fab::before {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 36px; /* centra verticalmente dentro del círculo */
+    }
+
+    /* Ajuste si el icono es SVG o tiene padding natural */
+    .propuestas-list li i svg {
+        display: block;
+        margin: 0 auto;
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Hover/focus effect */
+    .propuestas-list li:hover,
+    .propuestas-list li:focus-within{
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,.12);
+        background: rgba(232,218,200,0.06);
+    }
+
+    /* Asegura que el contenido interno esté centrado y con buen espaciado */
+    .propuestas-list li > * {
+        margin: 0;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* En pantallas anchas muestra layout horizontal manteniendo el icono a la izquierda */
+    @media (min-width: 1000px) {
+        .propuestas-list ul { max-width: 1000px; }
+        .propuestas-list li {
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .propuestas-list li i,
+        .propuestas-list li .fa,
+        .propuestas-list li .fas,
+        .propuestas-list li .far,
+        .propuestas-list li .fab {
+            margin-bottom: 0;
+            margin-right: 0.75rem;
+        }
+        /* Asegura centrado vertical cuando el layout es horizontal */
+        .propuestas-list li i,
+        .propuestas-list li .fa,
+        .propuestas-list li svg {
+            align-self: center;
+        }
+    }
+/* Pagina Objetivos */
+.objetivos-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.objetivos-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.objetivos-list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+    background: transparent;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.objetivos-list li::before{
+    content: none;
+}
+.objetivos-list li i,
+.objetivos-list li .fa,
+.objetivos-list li .fas,
+.objetivos-list li .far,
+.objetivos-list li .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #E8DAC8;
+    color: #000;
+    font-weight: 700; /* para FA 6: use 900 para solid si corresponde */
+    margin-bottom: 0.5rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.12);
+    font-size: 18px;
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+    /* Asegura que cualquier pseudo-elemento o SVG quede centrado */
+    text-align: center;
+}
+.objetivos-list li i::before,
+.objetivos-list li .fa::before,
+.objetivos-list li .fas::before,
+.objetivos-list li .far::before,
+.objetivos-list li .fab::before {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 36px; /* centra verticalmente dentro del círculo */
+}
+.objetivos-list li i svg {
+    display: block;
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+}
+.objetivos-list li:hover,
+.objetivos-list li:focus-within{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    background: rgba(232,218,200,0.06);
+}
+.objetivos-list li > * {
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+/* Subtitulo general */
+.subtitle {
+    font-family: europa, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+@media (min-width: 1000px) {
+    .objetivos-list ul { max-width: 1000px; }
+    .objetivos-list li {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .objetivos-list li i,
+    .objetivos-list li .fa,
+    .objetivos-list li .fas,
+    .objetivos-list li .far,
+    .objetivos-list li .fab {
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+    }
+    .objetivos-list li i,
+    .objetivos-list li .fa,
+    .objetivos-list li svg {
+        align-self: center;
+    }
+}
+/* Pagina contacto */
+    .whatsapp-button,
+    .whatsapp-button:link,
+    .whatsapp-button:visited,
+    .whatsapp-button:active,
+    .whatsapp-button:focus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: #E8DAC8;
+        color: #000;
+        border-radius: 10px;
+        border: 1px solid #000;
+        font-family: montserrat, sans-serif;
+        text-align: center;
+        margin: 0 auto; /* centra horizontalmente */
+        height: 40px;
+        padding: 0 50px; /* tamaño del texto + ~10px (5px cada lado) */
+        width: fit-content; /* hace que el ancho siga el contenido */
+        min-width: 0;
+        line-height: normal;
+        text-decoration: none;
+        font-weight: 400;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+        transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, transform 0.15s ease;
+        font-size: 15px;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        vertical-align: middle;
+        box-sizing: border-box;
+    }
+
+    /* fuerza el color del texto dentro del span usado en el HTML */
+    .whatsapp-button span {
+        color: #000 !important;
+    }
+
+    .whatsapp-button:hover,
+    .whatsapp-button:focus {
+        background-color: #27ae60;
+        transform: translateY(-4px);
+        outline: none;
+    }
+
+    /* Forzar el color del texto y del ícono */
+    .whatsapp-button,
+    .whatsapp-button span,
+    .whatsapp-button i {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+
+    /* Mantener el color en hover/active/focus */
+    .whatsapp-button:hover,
+    .whatsapp-button:hover span,
+    .whatsapp-button:hover i {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
 @media (min-width:700px) {
     /* Header */
     .nav-list {
@@ -321,7 +700,7 @@ footer a:hover {
     }
 
 }
-@media (min-width: 985px) {
+@media (min-width: 1200px) {
     /* Header */
     .logo h1 {
         display: block;
