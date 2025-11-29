@@ -714,6 +714,39 @@ footer a:hover {
         line-height: 2.8;
     }
 }
+/* Galeria de imágenes */
+.galeria-fotos {
+    width: 100%;
+    height: 400px; /* Puedes cambiar este valor (ej. 300px o 500px) */
+    background-color: transparent !important; /* Asegura que no tenga fondo */
+}
+
+/* 2. El slide debe ser transparente y ocupar todo el espacio */
+.galeria-fotos .swiper-slide {
+    background-color: transparent !important; /* ELIMINA EL COLOR BEIGE */
+    height: 100% !important;
+    width: 100% !important;
+    /* Centrado por si la imagen falla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. LA CLAVE: Forza a la imagen a llenarlo todo */
+.galeria-fotos .swiper-slide img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Recorta la imagen para que no se deforme */
+}
+
+/* Opcional: Para que los puntitos se vean mejor sobre fotos claras */
+.swiper-pagination-bullet {
+    background-color: rgba(0,0,0,0.5) !important; /* Oscurece los puntos inactivos */
+}
+.swiper-pagination-bullet-active {
+    background-color: black !important; /* Punto activo negro */
+}
 @media (min-width:700px) {
     /* Header */
     .nav-list {
