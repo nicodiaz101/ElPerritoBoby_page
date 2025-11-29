@@ -347,6 +347,13 @@ footer a:hover {
     }
 }
 /* Propuesta */
+    .propuestas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem 1rem 1rem;
+    }
     .propuestas-list{
         display: flex;
         flex-direction: column;
@@ -746,6 +753,10 @@ footer a:hover {
 }
 .swiper-pagination-bullet-active {
     background-color: black !important; /* Punto activo negro */
+}
+.gallery2 {
+    /* Estilos específicos para la segunda galería */
+    padding-bottom: 1rem;
 }
 @media (min-width:700px) {
     /* Header */
