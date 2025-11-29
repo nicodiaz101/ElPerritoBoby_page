@@ -20,18 +20,6 @@ galerias.forEach((elementoGaleria) => {
     slidesPerView: 1, // Muestra 1 foto en móviles
     spaceBetween: 10,
     loop: true,       // Infinito
-    
-    // Responsividad (breakpoints)
-    breakpoints: {
-      640: {
-        slidesPerView: 2, // 2 fotos en tablets
-        spaceBetween: 20,
-      },
-      1024: {
-        slidesPerView: 3, // 3 fotos en escritorio
-        spaceBetween: 30,
-      },
-    },
 
     // Navegación independiente para cada instancia
     navigation: {

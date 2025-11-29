@@ -677,7 +677,7 @@ footer a:hover {
     text-align: center;
     font-family: montserrat, sans-serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2.5;
     text-decoration: none;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
@@ -819,6 +819,10 @@ footer a:hover {
         padding-left: 3rem;
         padding-right: 3rem;
     }
+    .historia{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     /* Propuesta */
     .propuestas-list{
         padding-left: 3rem;
@@ -831,7 +835,21 @@ footer a:hover {
     }
 
     /* Galeria de imágenes */
-
+    .galeria-fotos {
+        /* Aumentamos la altura para que la foto 4:3 no se recorte tanto */
+        height: 450px; 
+    }
+}
+@media (min-width: 900px) {
+   .galeria-fotos {
+        /* En monitores grandes, necesitamos más altura para impactar */
+        width: 85%;
+        height: 550px; 
+        
+        /* OJO: Si en tu JS configuraste "slidesPerView: 3" para PC,
+           entonces cambia este valor a 350px o 400px, o las fotos
+           se verán demasiado verticales. */
+    } 
 }
 @media (min-width: 1200px) {
     /* Header */
@@ -858,6 +876,10 @@ footer a:hover {
         padding-left: 10rem;
         padding-right: 10rem;
     }
+    .historia{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
     /* Propuesta */
     .propuestas-list{
         padding-left: 15rem;
@@ -870,4 +892,23 @@ footer a:hover {
     }
 
     /* Galeria de imágenes */
+    .galeria-fotos {
+        /* En monitores grandes, necesitamos más altura para impactar */
+        width: 70%;
+        height: 650px; 
+        
+        /* OJO: Si en tu JS configuraste "slidesPerView: 3" para PC,
+           entonces cambia este valor a 350px o 400px, o las fotos
+           se verán demasiado verticales. */
+    }
+}
+@media (min-width: 1600px) {
+    .galeria-fotos {
+        /* En monitores grandes, necesitamos más altura para impactar */
+        width: 58%;
+        
+        /* OJO: Si en tu JS configuraste "slidesPerView: 3" para PC,
+           entonces cambia este valor a 350px o 400px, o las fotos
+           se verán demasiado verticales. */
+    }
 }
