@@ -724,7 +724,7 @@ footer a:hover {
 /* Galeria de imágenes */
 .galeria-fotos {
     width: 100%;
-    height: 400px; /* Puedes cambiar este valor (ej. 300px o 500px) */
+    height: 300px; /* Puedes cambiar este valor (ej. 300px o 500px) */
     background-color: transparent !important; /* Asegura que no tenga fondo */
 }
 
