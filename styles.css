@@ -405,6 +405,8 @@ footer a:hover {
         justify-content: center;
         width: 36px;
         height: 36px;
+        min-width: 36px; /* Asegura ancho mínimo */
+        flex-shrink: 0;  /* Evita que se aplaste */
         border-radius: 50%;
         background: #E8DAC8;
         color: #000;
@@ -523,6 +525,8 @@ footer a:hover {
     justify-content: center;
     width: 36px;
     height: 36px;
+    min-width: 36px; /* Asegura ancho mínimo */
+    flex-shrink: 0;  /* Evita que se aplaste */
     border-radius: 50%;
     background: #E8DAC8;
     color: #000;
@@ -778,7 +782,8 @@ footer a:hover {
         display: none;
     }
     .nav-list li a {
-        padding: 5px;
+        padding: 0;
+        font-size: 18px;
     }
     .nav-list li {
         margin-bottom: 0;
@@ -809,6 +814,23 @@ footer a:hover {
         padding-right: 60px;
     
     }
+    /* Pagina Nosotros */
+    .historia-texto {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    /* Propuesta */
+    .propuestas-list{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    /* Pagina Objetivos */
+    .objetivos-list{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* Galeria de imágenes */
 
 }
 @media (min-width: 1200px) {
@@ -827,4 +849,25 @@ footer a:hover {
         padding-right: 150px;
     
     }
+    .nav-list li a {
+        padding: 0;
+        font-size: 20px;
+    }
+    /* Pagina Nosotros */
+    .historia-texto {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    /* Propuesta */
+    .propuestas-list{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+    /* Pagina Objetivos */
+    .objetivos-list{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    /* Galeria de imágenes */
 }
