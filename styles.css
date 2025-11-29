@@ -230,6 +230,539 @@ footer a:hover {
 .consultas {
     padding-right: 10px;
 }
+/* Pagina Nosotros */
+.historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+/* Titulo en general */
+.title{
+    font-family: montserrat, sans-serif; 
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+}
+.historia-texto {
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+.principios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.principios-texto {
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+.principios-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+/* Reset native list and use a counter for custom centered numbers */
+.principios-list ul{
+    list-style: none;
+    counter-reset: principio;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+}
+
+/* Each item is centered, number sits above the text in a circle */
+.principios-list li{
+    counter-increment: principio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+    background: transparent;
+}
+
+/* Number bubble */
+.principios-list li::before{
+    content: counter(principio);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #E8DAC8;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.12);
+}
+
+/* Hover/focus effect */
+.principios-list li:hover,
+.principios-list li:focus-within{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    background: rgba(232,218,200,0.08);
+}
+
+/* Ensure paragraph/text inside items is centered and well spaced */
+.principios-list li > * {
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Optional: on wider screens keep visual balance but allow horizontal layout */
+@media (min-width: 1000px) {
+    .principios-list ul { max-width: 1000px; }
+    .principios-list li {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .principios-list li::before{
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+    }
+}
+/* Propuesta */
+    .propuestas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .propuestas-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    /* Reset native list (sin contador numérico) */
+    .propuestas-list ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Cada item centrado; ahora usa un <i> de Font Awesome dentro de cada li */
+    .propuestas-list li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1rem;
+        border-radius: 8px;
+        transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+        background: transparent;
+        font-family: montserrat, sans-serif;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+    /* Si había pseudo-elementos anteriores, desactivar para evitar emojis */
+    .propuestas-list li::before{
+        content: none;
+    }
+
+    /* Estilo para el <i> de Font Awesome (coloca un <i class="fa ..."> como primer hijo del li) */
+    .propuestas-list li i,
+    .propuestas-list li .fa,
+    .propuestas-list li .fas,
+    .propuestas-list li .far,
+    .propuestas-list li .fab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        min-width: 36px; /* Asegura ancho mínimo */
+        flex-shrink: 0;  /* Evita que se aplaste */
+        border-radius: 50%;
+        background: #E8DAC8;
+        color: #000;
+        font-weight: 700; /* para FA 6: use 900 para solid si corresponde */
+        margin-bottom: 0.5rem;
+        box-shadow: 2px 2px 6px rgba(0,0,0,.12);
+        font-size: 18px;
+        line-height: 1;
+        padding: 0;
+        box-sizing: border-box;
+        /* Asegura que cualquier pseudo-elemento o SVG quede centrado */
+        text-align: center;
+    }
+
+    /* Alinea correctamente iconos generados por pseudo-elementos de FontAwesome */
+    .propuestas-list li i::before,
+    .propuestas-list li .fa::before,
+    .propuestas-list li .fas::before,
+    .propuestas-list li .far::before,
+    .propuestas-list li .fab::before {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        line-height: 36px; /* centra verticalmente dentro del círculo */
+    }
+
+    /* Ajuste si el icono es SVG o tiene padding natural */
+    .propuestas-list li i svg {
+        display: block;
+        margin: 0 auto;
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Hover/focus effect */
+    .propuestas-list li:hover,
+    .propuestas-list li:focus-within{
+        transform: translateY(-6px);
+        box-shadow: 0 8px 20px rgba(0,0,0,.12);
+        background: rgba(232,218,200,0.06);
+    }
+
+    /* Asegura que el contenido interno esté centrado y con buen espaciado */
+    .propuestas-list li > * {
+        margin: 0;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    /* En pantallas anchas muestra layout horizontal manteniendo el icono a la izquierda */
+    @media (min-width: 1000px) {
+        .propuestas-list ul { max-width: 1000px; }
+        .propuestas-list li {
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .propuestas-list li i,
+        .propuestas-list li .fa,
+        .propuestas-list li .fas,
+        .propuestas-list li .far,
+        .propuestas-list li .fab {
+            margin-bottom: 0;
+            margin-right: 0.75rem;
+        }
+        /* Asegura centrado vertical cuando el layout es horizontal */
+        .propuestas-list li i,
+        .propuestas-list li .fa,
+        .propuestas-list li svg {
+            align-self: center;
+        }
+    }
+/* Pagina Objetivos */
+.objetivos-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.objetivos-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.objetivos-list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+    background: transparent;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.objetivos-list li::before{
+    content: none;
+}
+.objetivos-list li i,
+.objetivos-list li .fa,
+.objetivos-list li .fas,
+.objetivos-list li .far,
+.objetivos-list li .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-width: 36px; /* Asegura ancho mínimo */
+    flex-shrink: 0;  /* Evita que se aplaste */
+    border-radius: 50%;
+    background: #E8DAC8;
+    color: #000;
+    font-weight: 700; /* para FA 6: use 900 para solid si corresponde */
+    margin-bottom: 0.5rem;
+    box-shadow: 2px 2px 6px rgba(0,0,0,.12);
+    font-size: 18px;
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+    /* Asegura que cualquier pseudo-elemento o SVG quede centrado */
+    text-align: center;
+}
+.objetivos-list li i::before,
+.objetivos-list li .fa::before,
+.objetivos-list li .fas::before,
+.objetivos-list li .far::before,
+.objetivos-list li .fab::before {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 36px; /* centra verticalmente dentro del círculo */
+}
+.objetivos-list li i svg {
+    display: block;
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+}
+.objetivos-list li:hover,
+.objetivos-list li:focus-within{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    background: rgba(232,218,200,0.06);
+}
+.objetivos-list li > * {
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+/* Subtitulo general */
+.subtitle {
+    font-family: europa, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2rem;
+}
+@media (min-width: 1000px) {
+    .objetivos-list ul { max-width: 1000px; }
+    .objetivos-list li {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .objetivos-list li i,
+    .objetivos-list li .fa,
+    .objetivos-list li .fas,
+    .objetivos-list li .far,
+    .objetivos-list li .fab {
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+    }
+    .objetivos-list li i,
+    .objetivos-list li .fa,
+    .objetivos-list li svg {
+        align-self: center;
+    }
+}
+/* Pagina contacto */
+/* Botón estilo WhatsApp (basado en .large_button) */
+.whatsapp-button {
+    display: block;
+    margin: 1rem auto !important; /* centra horizontalmente y deja un poco de espacio vertical */
+    max-width: calc(100% - 80px);
+    box-sizing: border-box;
+    align-self: center; /* en caso de que el padre sea flex */
+    text-align: center;
+}
+@media (min-width:700px) {
+    .whatsapp-button {
+        margin: 1rem auto !important; /* asegurar centrado también en pantallas anchas */
+    }
+}
+.whatsapp-button {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #E8DAC8;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 2;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover: pasa a verde tipo WhatsApp y texto blanco */
+.whatsapp-button:hover {
+    background-color: #25D366; /* WhatsApp green */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Ajustes en pantallas más anchas (consistente con .large_button) */
+@media (min-width:700px) {
+    .whatsapp-button {
+        width: 400px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 2.8;
+    }
+}
+/* Botón estilo Mail (basado en .large_button) */
+.mail-button {
+    display: block;
+    margin: 1rem auto !important; /* centra horizontalmente y deja un poco de espacio vertical */
+    max-width: calc(100% - 80px);
+    box-sizing: border-box;
+    align-self: center; /* en caso de que el padre sea flex */
+    text-align: center;
+}
+@media (min-width:700px) {
+    .mail-button {
+        margin: 1rem auto !important; /* asegurar centrado también en pantallas anchas */
+    }
+}
+.mail-button {
+    display: block;
+    width: 400px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #E8DAC8;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2.5;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.ubicacion-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.ubicacion-texto p {
+    font-family: montserrat, sans-serif; 
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0.5rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 1.6;
+}
+
+/* Hover: pasa a verde tipo WhatsApp y texto blanco */
+.mail-button:hover {
+    background-color: #000; /* WhatsApp green */
+    color: #fff;
+    transform: scale(1.1);
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* Ajustes en pantallas más anchas (consistente con .large_button) */
+@media (min-width:700px) {
+    .mail-button {
+        width: 400px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 2.8;
+    }
+}
+/* Galeria de imágenes */
+.galeria-fotos {
+    width: 100%;
+    height: 300px; /* Puedes cambiar este valor (ej. 300px o 500px) */
+    background-color: transparent !important; /* Asegura que no tenga fondo */
+}
+
+/* 2. El slide debe ser transparente y ocupar todo el espacio */
+.galeria-fotos .swiper-slide {
+    background-color: transparent !important; /* ELIMINA EL COLOR BEIGE */
+    height: 100% !important;
+    width: 100% !important;
+    /* Centrado por si la imagen falla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. LA CLAVE: Forza a la imagen a llenarlo todo */
+.galeria-fotos .swiper-slide img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; /* Recorta la imagen para que no se deforme */
+}
+
+/* Opcional: Para que los puntitos se vean mejor sobre fotos claras */
+.swiper-pagination-bullet {
+    background-color: rgba(0,0,0,0.5) !important; /* Oscurece los puntos inactivos */
+}
+.swiper-pagination-bullet-active {
+    background-color: black !important; /* Punto activo negro */
+}
+.gallery2 {
+    /* Estilos específicos para la segunda galería */
+    padding-bottom: 1rem;
+}
 @media (min-width:700px) {
     /* Header */
     .nav-list {
@@ -250,7 +783,8 @@ footer a:hover {
         display: none;
     }
     .nav-list li a {
-        padding: 5px;
+        padding: 0;
+        font-size: 18px;
     }
     .nav-list li {
         margin-bottom: 0;
@@ -281,9 +815,44 @@ footer a:hover {
         padding-right: 60px;
     
     }
+    /* Pagina Nosotros */
+    .historia-texto {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .historia{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    /* Propuesta */
+    .propuestas-list{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    /* Pagina Objetivos */
+    .objetivos-list{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 
+    /* Galeria de imágenes */
+    .galeria-fotos {
+        /* Aumentamos la altura para que la foto 4:3 no se recorte tanto */
+        height: 450px; 
+    }
 }
-@media (min-width: 985px) {
+@media (min-width: 900px) {
+   .galeria-fotos {
+        /* En monitores grandes, necesitamos más altura para impactar */
+        width: 85%;
+        height: 550px; 
+        
+        /* OJO: Si en tu JS configuraste "slidesPerView: 3" para PC,
+           entonces cambia este valor a 350px o 400px, o las fotos
+           se verán demasiado verticales. */
+    } 
+}
+@media (min-width: 1200px) {
     /* Header */
     .logo h1 {
         display: block;
@@ -298,5 +867,49 @@ footer a:hover {
     .redes{
         padding-right: 150px;
     
+    }
+    .nav-list li a {
+        padding: 0;
+        font-size: 20px;
+    }
+    /* Pagina Nosotros */
+    .historia-texto {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+    .historia{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    /* Propuesta */
+    .propuestas-list{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+    /* Pagina Objetivos */
+    .objetivos-list{
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    /* Galeria de imágenes */
+    .galeria-fotos {
+        /* En monitores grandes, necesitamos más altura para impactar */
+        width: 70%;
+        height: 650px; 
+        
+        /* OJO: Si en tu JS configuraste "slidesPerView: 3" para PC,
+           entonces cambia este valor a 350px o 400px, o las fotos
+           se verán demasiado verticales. */
+    }
+}
+@media (min-width: 1600px) {
+    .galeria-fotos {
+        /* En monitores grandes, necesitamos más altura para impactar */
+        width: 58%;
+        
+        /* OJO: Si en tu JS configuraste "slidesPerView: 3" para PC,
+           entonces cambia este valor a 350px o 400px, o las fotos
+           se verán demasiado verticales. */
     }
 }
