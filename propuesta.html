@@ -4,188 +4,184 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propuesta - Jardín "El Perrito Boby"</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/mve2xee.css">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <meta name="description" content="Nuestra propuesta educativa">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..1000;1,300..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e1a23102fe.js" crossorigin="anonymous"></script>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    
+    <!-- Analytics -->
     <script src="https://cdn.counter.dev/script.js" data-id="cfc9ebb9-831d-431c-b860-cfd9b7a49730" data-utcoffset="-3"></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
-            <img class="logoimg" src="img/10F1543DB5BA4B4FA2C80DE96415C55C.jpg" alt="Logo de la marca. Un perro sentado blanco,marron y naranja" class="logoimg">
-            <h1>Jardin de Infantes "El Perrito Boby"</h1>
+    <header class="header">
+        <a href="/index.html" class="logo-container">
+            <img class="logo-img" src="/img/10F1543DB5BA4B4FA2C80DE96415C55C.jpg" alt="Logo de la marca. Un perro sentado blanco,marron y naranja">
+            <span class="logo-text"><strong>El Perrito Boby</strong></span>
         </a>
-        <button id="abrir" class="open-button"><i class="fa-solid fa-bars"></i></button>
+        
+        <button class="nav-btn-mobile" id="abrir">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
         <nav class="nav" id="nav">
-            <button id="cerrar" class="close-button"><i class="fa-solid fa-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="propuesta.html">Propuesta</a></li>
-                <li><a href="objetivos.html">Objetivos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="https://plataforma.acadeu.com/i/perrito-boby">Acceso Acadeu</a></li>
-            </ul>
+            <a href="/nosotros.html" class="nav-link">Nosotros</a>
+            <a href="/propuesta.html" class="nav-link">Propuesta</a>
+            <a href="/objetivos.html" class="nav-link">Objetivos</a>
+            <a href="/contacto.html" class="nav-link">Contacto</a>
+            <a href="https://plataforma.acadeu.com/i/perrito-boby" target="_blank" class="nav-link">Acceso Acadeu</a>
         </nav>
-    </header>
-    <section class="propuestas">
-        <div class="title">
-            <h2>Nuestra Propuesta Pedagógica de enseñanza</h2>
-        </div>
-        <div class="propuestas-texto">
-            <ul class="propuestas-list" aria-label="Lista de principios">
-                <li>
-                    <i class="fa-solid fa-book-open"></i>
-                    <p>Abordaje a través del Diseño Curricular de Nivel Inicial de la Pcia. De Bs. As.
-                         Enseñanza secuenciada y progresiva de todas sus Áreas: Prácticas del Lenguaje, Matemática, Ambiente Social y Natural,
-                          Efemérides, Formación Personal y Social, Juego. Educación Artística conformada por: Literatura, Música, 
-                          Expresión Corporal, Teatro- Títere y Educación Visual; todas a cargo de la docente de sala.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-puzzle-piece"></i>
-                    <p>Materias Especiales y Extraprogramáticas: Educación Física, Inglés y Computación - 
-                        Educación Digital, desde los 3 años. Todas a cargo de profesoras especiales.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-bus"></i>
-                    <p>Salidas Educativas: salidas al ambiente cercano cuya finalidad es enriquecer y profundizar los conocimientos, 
-                        las propuestas áulicas y los aprendizajes de los niños a través del contacto con la realidad. </p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-hands-helping"></i>
-                    <p>Jornadas escolares que fomenten, con la mediación docente,
-                         la autonomía y responsabilidad progresiva en su accionar,
-                          en la resolución de situaciones cotidianas y de necesidades diarias,
-                           favoreciendo el crecimiento y desarrollo integral de nuestros niños, teniendo en cuenta los Objetivos Generales.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-handshake"></i>
-                    <p>Normas de convivencia: una construcción conjunta entre niños y docente,
-                         que permite un abordaje consensuado y comprometido. </p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-search"></i>
-                    <p>Inicio en la indagación e investigación:  a través de la búsqueda de información a través de: búsqueda bibliográfica en 
-                        diferentes portadores de textos en la sala, en la Web, 
-                        informantes válidos (personas entrevistadas), observación o en los hogares con la ayuda de la familia. </p>
-                </li>
-            </ul>
-        </div>
-        <div class="gallery">
-                <div class="swiper galeria-fotos">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/actividad14.jpg" alt="Actividad 14"></div>
-                        <div class="swiper-slide"><img src="img/actividad2.jpg" alt="Actividad 2"></div>
-                        <div class="swiper-slide"><img src="img/actividad3.jpg" alt="Actividad 3"></div>
-                        <div class="swiper-slide"><img src="img/actividad4.jpg" alt="Actividad 4"></div>
-                        <div class="swiper-slide"><img src="img/actividad5.jpg" alt="Actividad 5"></div>
-                        <div class="swiper-slide"><img src="img/actividad6.jpg" alt="Actividad 6"></div>
-                        <div class="swiper-slide"><img src="img/actividad1.jpg" alt="Actividad 1"></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+    </header> 
+
+    <main>
+        <section class="page-header" style="background-color: var(--secondary-color);">
+            <h1 class="page-title">Propuesta Pedagógica</h1>
+            <p>Conocé cómo enseñamos y acompañamos a los chicos</p>
+        </section>
+
+        <section class="content-section">
+            <div class="custom-list">
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="list-text">Abordaje a través del Diseño Curricular de Nivel Inicial de la Pcia. De Bs. As. Enseñanza secuenciada y progresiva de todas sus Áreas: Prácticas del Lenguaje, Matemática, Ambiente Social y Natural, Efemérides, Formación Personal y Social, Juego. Educación Artística conformada por: Literatura, Música, Expresión Corporal, Teatro- Títere y Educación Visual; todas a cargo de la docente de sala.</div>
                 </div>
-        </div>
-        <div class="propuestas-texto">
-            <ul class="propuestas-list" aria-label="Lista de propuestas institucionales">
-                <li>
-                    <i class="fa-solid fa-pencil-alt"></i>
-                    <p>Inicio y desarrollo del proceso de lectoescritura a través de un ambiente alfabetizador.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-sitemap"></i>
-                    <p>Proyectos Institucionales: llevados a cabo de manera conjunta entre todas las salas</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-gamepad"></i>
-                    <p>Proyecto Institucional: juegos en el patio del Jardín; una propuesta para transmitir,
-                        revalorizar y sostener nuestro acervo cultural de Juegos Tradicionales, de diagramas, 
-                        de competencias, de rondas, como así también el juego dramático, imaginativo y creativo. 
-                        Las experiencias de juego compartido ofrecen la oportunidad de construir lazos de confianza y
-                         amistad que constituyen marcos de referencia fundamentales para el desarrollo infantil.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-project-diagram"></i>
-                    <p>Proyecto de Articulación: entre secciones brindando continuidad a las trayectorias educativas institucionales y 
-                        con el Nivel Primario como facilitador en el cambio de nivel educativo. </p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-clipboard-check"></i>
-                    <p>Instancias evaluativas del proceso de aprendizaje a lo largo del año:
-                         3 Registros Evaluativos escritos: Periodo de Inicio- Periodo de Desarrollo y Periodo Final. </p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-users"></i>
-                    <p>Reuniones de familias: 4 en el año</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-user-friends"></i>
-                    <p>Reuniones y encuentros personalizados de orientación y acompañamiento de las trayectorias educativas.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-universal-access"></i>
-                    <p>Trayectorias educativas respetuosas de las necesidades educativas especiales.</p>
-                </li>
-                <li>
-                    <i class="fa-solid fa-comments"></i>
-                    <p>Comunicación permanente a través de cuaderno de comunicados virtual: Plataforma educativa.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="gallery2">
-                <div class="swiper galeria-fotos">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/actividad7.jpg" alt="Actividad 7"></div>
-                        <div class="swiper-slide"><img src="img/actividad8.jpg" alt="Actividad 8"></div>
-                        <div class="swiper-slide"><img src="img/actividad9.jpeg" alt="Actividad 9"></div>
-                        <div class="swiper-slide"><img src="img/actividad10.jpeg" alt="Actividad 10"></div>
-                        <div class="swiper-slide"><img src="img/actividad11.jpeg" alt="Actividad 11"></div>
-                        <div class="swiper-slide"><img src="img/actividad12.jpeg" alt="Actividad 12"></div>
-                        <div class="swiper-slide"><img src="img/actividad13.jpg" alt="Actividad 13"></div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <div class="list-text">Materias Especiales y Extraprogramáticas: Educación Física, Inglés y Computación - Educación Digital, desde los 3 años. Todas a cargo de profesoras especiales.</div>
                 </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-bus"></i></div>
+                    <div class="list-text">Salidas Educativas: salidas al ambiente cercano cuya finalidad es enriquecer y profundizar los conocimientos, las propuestas áulicas y los aprendizajes de los niños a través del contacto con la realidad.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-hands-helping"></i></div>
+                    <div class="list-text">Jornadas escolares que fomenten, con la mediación docente, la autonomía y responsabilidad progresiva en su accionar, en la resolución de situaciones cotidianas y de necesidades diarias, favoreciendo el crecimiento y desarrollo integral de nuestros niños, teniendo en cuenta los Objetivos Generales.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <div class="list-text">Normas de convivencia: una construcción conjunta entre niños y docente, que permite un abordaje consensuado y comprometido.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-search"></i></div>
+                    <div class="list-text">Inicio en la indagación e investigación: a través de la búsqueda de información a través de: búsqueda bibliográfica en diferentes portadores de textos en la sala, en la Web, informantes válidos (personas entrevistadas), observación o en los hogares con la ayuda de la familia.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="swiper swiper-container-custom galeria-fotos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad14.jpg" alt="Actividad 14"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad2.jpg" alt="Actividad 2"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad3.jpg" alt="Actividad 3"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad4.jpg" alt="Actividad 4"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad5.jpg" alt="Actividad 5"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad6.jpg" alt="Actividad 6"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad1.jpg" alt="Actividad 1"></div>
+                </div>
+                <div class="swiper-button-next" style="color: var(--secondary-color);"></div>
+                <div class="swiper-button-prev" style="color: var(--secondary-color);"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="content-title">Propuestas Institucionales</h2>
+            <div class="custom-list">
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-pencil-alt"></i></div>
+                    <div class="list-text">Inicio y desarrollo del proceso de lectoescritura a través de un ambiente alfabetizador.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-sitemap"></i></div>
+                    <div class="list-text">Proyectos Institucionales: llevados a cabo de manera conjunta entre todas las salas.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <div class="list-text">Proyecto Institucional: juegos en el patio del Jardín; una propuesta para transmitir, revalorizar y sostener nuestro acervo cultural de Juegos Tradicionales, de diagramas, de competencias, de rondas, como así también el juego dramático, imaginativo y creativo. Las experiencias de juego compartido ofrecen la oportunidad de construir lazos de confianza y amistad que constituyen marcos de referencia fundamentales para el desarrollo infantil.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-project-diagram"></i></div>
+                    <div class="list-text">Proyecto de Articulación: entre secciones brindando continuidad a las trayectorias educativas institucionales y con el Nivel Primario como facilitador en el cambio de nivel educativo.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <div class="list-text">Instancias evaluativas del proceso de aprendizaje a lo largo del año: 3 Registros Evaluativos escritos: Periodo de Inicio - Periodo de Desarrollo y Periodo Final.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="list-text">Reuniones de familias: 4 en el año.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-user-friends"></i></div>
+                    <div class="list-text">Reuniones y encuentros personalizados de orientación y acompañamiento de las trayectorias educativas.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-universal-access"></i></div>
+                    <div class="list-text">Trayectorias educativas respetuosas de las necesidades educativas especiales.</div>
+                </div>
+                <div class="custom-list-item">
+                    <div class="list-icon"><i class="fa-solid fa-comments"></i></div>
+                    <div class="list-text">Comunicación permanente a través de cuaderno de comunicados virtual: Plataforma educativa.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="swiper swiper-container-custom galeria-fotos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad7.jpg" alt="Actividad 7"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad8.jpg" alt="Actividad 8"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad9.jpeg" alt="Actividad 9"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad10.jpeg" alt="Actividad 10"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad11.jpeg" alt="Actividad 11"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad12.jpeg" alt="Actividad 12"></div>
+                    <div class="swiper-slide swiper-slide-custom"><img src="/img/actividad13.jpg" alt="Actividad 13"></div>
+                </div>
+                <div class="swiper-button-next" style="color: var(--secondary-color);"></div>
+                <div class="swiper-button-prev" style="color: var(--secondary-color);"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h3><i class="fa-solid fa-map-location-dot"></i> Dirección</h3>
+            <p>3 de febrero 1175<br>San Fernando</p>
         </div>
-    </section>
-    <footer>
-        <div class="direccion">
-            <h3>Direccion:</h3>
-            <p>3 de febrero 1175, <br> San Fernando</p>
+        <div class="footer-col">
+            <h3><i class="fa-solid fa-user-plus"></i> Seguinos</h3>
+            <div class="footer-socials">
+                <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/jardinelperritoboby/" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            </div>
         </div>
-        <div class="redes">
-            <h3>Seguinos en:</h3>
-            <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="fa-brands fa-instagram"></a>
-            <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="fa-brands fa-facebook"></a>
-        </div>
-        <div class="consultas">
-            <h3>Consultas:</h3>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=541123100332&text=" class="fa-brands fa-whatsapp"></a>
-            <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="fa-solid fa-envelope"></a>
+        <div class="footer-col">
+            <h3><i class="fa-solid fa-comments"></i> Consultas</h3>
+            <div class="footer-socials">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=541123100332&text=" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
+</html>

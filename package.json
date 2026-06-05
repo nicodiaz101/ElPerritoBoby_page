@@ -1,0 +1,26 @@
+{
+  "name": "elperritoboby_page",
+  "version": "1.0.0",
+  "description": "Web page for Jardin \"El Perrito Boby\" ## Roadmap: 1. \"Personal\" Web page desing. For easly and fasly deploy (2024 Inscriptions started and they need the page online in days)     - Complete  2. Re-desing homepage and create history, proposal and contact page (Final version)     - Complete 3. Add \"Nosotros\" and \"Propuesta\" pages     - In Progress",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicodiaz101/ElPerritoBoby_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/nicodiaz101/ElPerritoBoby_page/issues"
+  },
+  "homepage": "https://github.com/nicodiaz101/ElPerritoBoby_page#readme",
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}

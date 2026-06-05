@@ -4,87 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jardín "El Perrito Boby"</title>
-    <meta
-        name="description"
-        content="Desde 1971 brindando educación integral a los niños"
-    />
-    <link rel="stylesheet" href="styles.css">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://use.typekit.net/mve2xee.css">
+    <meta name="description" content="Desde 1971 brindando educación integral a los niños">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300..1000;1,300..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e1a23102fe.js" crossorigin="anonymous"></script>
+    
+    <!-- Analytics -->
     <script src="https://cdn.counter.dev/script.js" data-id="cfc9ebb9-831d-431c-b860-cfd9b7a49730" data-utcoffset="-3"></script>
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">
-            <img class="logoimg" src="img/10F1543DB5BA4B4FA2C80DE96415C55C.jpg" alt="Logo de la marca. Un perro sentado blanco,marron y naranja" class="logoimg">
-            <h1>Jardin de Infantes "El Perrito Boby"</h1>
+    <header class="header">
+        <a href="/index.html" class="logo-container">
+            <img class="logo-img" src="/img/10F1543DB5BA4B4FA2C80DE96415C55C.jpg" alt="Logo de la marca. Un perro sentado blanco,marron y naranja">
+            <span class="logo-text"><strong>El Perrito Boby</strong></span>
         </a>
-        <button id="abrir" class="open-button"><i class="fa-solid fa-bars"></i></button>
+        
+        <button class="nav-btn-mobile" id="abrir">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
         <nav class="nav" id="nav">
-            <button id="cerrar" class="close-button"><i class="fa-solid fa-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="propuesta.html">Propuesta</a></li>
-                <li><a href="objetivos.html">Objetivos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="https://plataforma.acadeu.com/i/perrito-boby">Acceso Acadeu</a></li>
-            </ul>
+            <a href="/nosotros.html" class="nav-link">Nosotros</a>
+            <a href="/propuesta.html" class="nav-link">Propuesta</a>
+            <a href="/objetivos.html" class="nav-link">Objetivos</a>
+            <a href="/contacto.html" class="nav-link">Contacto</a>
+            <a href="https://plataforma.acadeu.com/i/perrito-boby" target="_blank" class="nav-link">Acceso Acadeu</a>
         </nav>
     </header> 
-    <section class="inscripcion">
-        <h4>¡Abierta la Inscripción 2026! <br> Salas de 2-3, 4 y 5 años </h4>
-        <a class="large_button" href="https://forms.gle/WT3CHzUYMNaW8CHv8" target="_blank">Completá el formulario aquí</a> 
-    </section>
-    <section class="instagram">
-        <h1>Seguinos en instagram</h1>
-        <div class="instagram-container">
-            <iframe src="https://www.instagram.com/jardinelperritoboby/embed/" 
-            scrolling="no" 
-            allowtransparency="true" 
-            allowfullscreen="true">
-    </iframe>
+
+    <main>
+        <!-- Hero Section con Banner de Inscripción -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">¡Abierta la Inscripción 2026!<br>Salas de 2, 3, 4 y 5 años</h1>
+                <a href="https://forms.gle/WT3CHzUYMNaW8CHv8" target="_blank" class="btn-primary">
+                    <i class="fa-solid fa-clipboard-list" style="margin-right: 8px;"></i> Completá el formulario aquí
+                </a>
+            </div>
+        </section>
+
+        <!-- Instagram Embed Section -->
+        <section class="instagram-section">
+            <h2 class="section-title"><i class="fa-brands fa-instagram" style="margin-right: 10px;"></i> Seguinos en Instagram</h2>
+            <div class="instagram-wrapper">
+                <iframe class="instagram-iframe"
+                    src="https://www.instagram.com/jardinelperritoboby/embed/" 
+                    scrolling="no" 
+                    allowtransparency="true" 
+                    allowfullscreen="true">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Lema Section -->
+        <section class="lema-section">
+            <h3 class="lema-text">"Desde 1971 dedicados a la educación inicial"</h3>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-col">
+            <h3><i class="fa-solid fa-map-location-dot"></i> Dirección</h3>
+            <p>3 de febrero 1175<br>San Fernando</p>
         </div>
-    </section>
-    <section class="lema">
-        <h3>Desde 1971 dedicados a la educación inicial</h3>
-    </section>
-    <footer>
-        <div class="direccion">
-            <h3>Direccion:</h3>
-            <p>3 de febrero 1175, <br> San Fernando</p>
+        <div class="footer-col">
+            <h3><i class="fa-solid fa-user-plus"></i> Seguinos</h3>
+            <div class="footer-socials">
+                <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/jardinelperritoboby/" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            </div>
         </div>
-        <div class="redes">
-            <h3>Seguinos en:</h3>
-            <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="fa-brands fa-instagram"></a>
-            <a target="_blank" href="https://www.facebook.com/jardinelperritoboby/" class="fa-brands fa-facebook"></a>
-        </div>
-        <div class="consultas">
-            <h3>Consultas:</h3>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=541123100332&text=" class="fa-brands fa-whatsapp"></a>
-            <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="fa-solid fa-envelope"></a>
+        <div class="footer-col">
+            <h3><i class="fa-solid fa-comments"></i> Consultas</h3>
+            <div class="footer-socials">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=541123100332&text=" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
