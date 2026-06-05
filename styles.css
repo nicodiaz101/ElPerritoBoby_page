@@ -305,10 +305,10 @@ ul {
     display: block;
   }
   .hero-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .hero {
     padding-top: 7rem;
@@ -316,6 +316,38 @@ ul {
   }
   .footer {
     grid-template-columns: 1fr;
+  }
+  .page-header {
+    padding: 6.5rem 1rem 3rem 1rem;
+  }
+  .page-title {
+    font-size: 2.2rem;
+  }
+  .content-section {
+    padding: 2.5rem 1rem;
+  }
+  .content-title {
+    font-size: 1.8rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .lema-text {
+    font-size: 1.4rem;
+  }
+  .inscription-banner h2 {
+    font-size: 1.8rem;
+  }
+  .contact-card {
+    padding: 1.5rem 1rem;
+  }
+  .contact-btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+  .btn-primary {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -452,6 +484,9 @@ ul {
   text-align: center;
   box-shadow: var(--shadow-sm);
   transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-card:hover {
@@ -471,14 +506,21 @@ ul {
 }
 
 .contact-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--secondary-color);
   color: var(--white);
   border-radius: var(--radius-full);
   font-weight: bold;
+  font-size: 0.95rem;
   transition: var(--transition);
+  max-width: 100%;
+  word-break: break-all;
+  white-space: normal;
 }
 
 .contact-btn:hover {
