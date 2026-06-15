@@ -26,8 +26,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 
     <!-- Main CSS -->
-  <script type="module" crossorigin src="/assets/main-Bl_UHz6s.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-DFsNNI1p.css">
+  <script type="module" crossorigin src="/assets/main-C78v9wDE.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BYzd5fuc.css">
 </head>
 
 <body>
@@ -62,15 +62,18 @@
                         style="background-color: var(--secondary-color); color: var(--white);">
                         <i class="fa-solid fa-book-open" style="margin-right: 8px;"></i> Conocé nuestra propuesta
                     </a>
-                    <a href="https://forms.gle/WT3CHzUYMNaW8CHv8" target="_blank" class="btn-primary">
+                    <a href="#inscription-banner" class="btn-primary">
                         <i class="fa-solid fa-clipboard-list" style="margin-right: 8px;"></i> Inscripción 2027
                     </a>
                 </div>
             </div>
+            <a href="#features-section" class="scroll-down-btn" aria-label="Ver más">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
         </section>
 
         <!-- Por Qué Elegirnos (Pilares) -->
-        <section class="features-section">
+        <section id="features-section" class="features-section">
             <h2 class="section-title">¿Por qué elegirnos?</h2>
             <p style="font-size: 1.2rem; color: var(--text-light); max-width: 600px; margin: 0 auto;">Ofrecemos un
                 espacio cálido y seguro donde los niños aprenden, juegan y crecen acompañados de profesionales.</p>
@@ -98,13 +101,18 @@
         </section>
 
         <!-- Banda de Inscripción Central -->
-        <section class="inscription-banner">
+        <section id="inscription-banner" class="inscription-banner">
             <h2>¡Sumate a nuestra familia!<br>Abierta la inscripción 2027 para salas de 2-3, 4 y 5 años</h2>
             <p class="inscription-subtitle">Turno mañana y tarde<br>Jornada simple y extendida optativa</p>
-            <a href="https://forms.gle/WT3CHzUYMNaW8CHv8" target="_blank" class="btn-primary">
-                Completar Formulario de Pre-inscripción <i class="fa-solid fa-arrow-right"
-                    style="margin-left: 8px;"></i>
-            </a>
+            <div class="inscription-buttons">
+                <a href="https://forms.gle/WT3CHzUYMNaW8CHv8" target="_blank" class="btn-primary">
+                    Completar Formulario de Pre-inscripción <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 8px;"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=541123100332&text=" target="_blank" class="btn-primary whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Consultar por WhatsApp
+                </a>
+            </div>
         </section>
 
         <!-- Instagram Embed Section -->
@@ -129,19 +137,27 @@
         <div class="footer-col">
             <h3><i class="fa-solid fa-user-plus"></i> Seguinos</h3>
             <div class="footer-socials">
-                <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="social-icon"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a target="_blank" href="https://www.facebook.com/jardinelperritoboby/" class="social-icon"><i
-                        class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/jardinelperritoboby/?hl=es-la" class="social-btn">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/jardinelperritoboby/" class="social-btn">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
             </div>
         </div>
         <div class="footer-col">
             <h3><i class="fa-solid fa-comments"></i> Consultas</h3>
             <div class="footer-socials">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=541123100332&text=" class="social-icon"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="social-icon"><i
-                        class="fa-solid fa-envelope"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=541123100332&text=" class="social-btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a target="_blank" href="mailto:preinscripcion@elperritoboby.com.ar" class="social-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
             </div>
         </div>
     </footer>
