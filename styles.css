@@ -81,8 +81,6 @@ ul {
 
 .logo-img {
   height: 50px;
-  border-radius: 50%;
-  box-shadow: var(--shadow-sm);
 }
 
 .logo-text {
@@ -337,6 +335,11 @@ ul {
   }
   .inscription-banner h2 {
     font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .inscription-banner .inscription-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
   }
   .contact-card {
     padding: 1.5rem 1rem;
@@ -594,8 +597,17 @@ ul {
 
 .inscription-banner h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.inscription-banner .inscription-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  opacity: 1;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .inscription-banner .btn-primary {
