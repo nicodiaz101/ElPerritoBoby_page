@@ -1,13 +1,36 @@
 const nav = document.querySelector('#nav');
 const abrir = document.querySelector('#abrir');
-const cerrar = document.querySelector('#cerrar');
 
-abrir.addEventListener('click', () => {
-    nav.classList.add('visible');
-});
-cerrar.addEventListener('click', () => {
-    nav.classList.remove('visible');
-});
+if (abrir && nav) {
+    abrir.addEventListener('click', () => {
+        nav.classList.toggle('visible');
+        abrir.classList.toggle('active');
+        
+        const icon = abrir.querySelector('i');
+        if (icon) {
+            if (abrir.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Cerrar menú y resetear icono al cambiar a vista de escritorio
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('visible');
+            abrir.classList.remove('active');
+            const icon = abrir.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+}
 
 // Swiper gallery
 
