@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
+// Evaluamos si el build se está ejecutando en los servidores de GitHub Actions
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+
 export default defineConfig({
+  // Si es GH Pages, usa la subcarpeta. Si no, usa la raíz '/' para tu hosting real.
+  base: isGitHubPages ? '/ElPerritoBoby_page/' : '/',
   build: {
     rollupOptions: {
       input: {
